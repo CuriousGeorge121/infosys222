@@ -60,7 +60,7 @@ Student | 240 of you from A to Z
 
 - Reading: There is no textbook nor course book. Most readings for this course could be accessed online where [links](https://auckland.rl.talis.com/lists/67385800-22DC-21D5-CBF3-00CC4AFE9E1E.html) are provided
 
-- Software: [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9), [Sqlite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any good text editor)
+- Software: [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9), [SQLite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any good text editor)
 
 
 ## <i class="fa fa-phone"></i> Communication
@@ -293,6 +293,8 @@ WHERE ...
 
 ## <i class="fa fa-book"></i> Reading
 - Essential
+	- [The Worlds of Database Systems (p1-13)](http://infolab.stanford.edu/~ullman/fcdb/ch1.pdf)
+	
 	- [Introduction from SQL for Web Nerds](http://philip.greenspun.com/sql/introduction.html)
 
 - Further
