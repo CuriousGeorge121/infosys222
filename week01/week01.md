@@ -22,7 +22,7 @@ Role | Name
 --- | ---
 Lecturer | Johnny Chan [<i class="fa fa-envelope-o pull-right"></i>](mailto:jh.chan@auckland.ac.nz)
 Coordinator | Udayangi Muthupoltotage [<i class="fa fa-envelope-o pull-right"></i>](mailto:u.muthupoltotage@auckland.ac.nz)
-Tutor | Alice, Andy, Grace, Jose, Mai, Qain, Shivanka, Zubair
+Tutor | Grace Li, Jose Ortiz, Mai Honda, Kun Qian, Shivanka Kathiravel, Zubair Mohamed
 Student | 240 of you from A to Z
 
 
@@ -60,7 +60,7 @@ Student | 240 of you from A to Z
 
 - Reading: There is no textbook nor course book. Most readings for this course could be accessed online where [links](https://auckland.rl.talis.com/lists/67385800-22DC-21D5-CBF3-00CC4AFE9E1E.html) are provided
 
-- Software: [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9), [SQLite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any good text editor)
+- Software: [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9) or [Draw.io](https://www.draw.io), [SQLite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any text editor)
 
 
 ## <i class="fa fa-phone"></i> Communication
@@ -90,7 +90,7 @@ Student | 240 of you from A to Z
 
 	- use [data modelling](https://en.wikipedia.org/wiki/Data_modeling) to define and analyse data requirements
 	- design a database in [entity-relationship (ER) model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model) and translate that to the [relational model](https://en.wikipedia.org/wiki/Relational_model)
-	- Utilise theoretical techniques like [normalisation](https://en.wikipedia.org/wiki/Database_normalization) to improve database design and implementation
+	- Utilise theoretical technique like [normalisation](https://en.wikipedia.org/wiki/Database_normalization) to improve database design and implementation
 	- program basic to complex queries in [SQL](https://en.wikipedia.org/wiki/SQL)
 	- understand the [fundamentals](https://en.wikipedia.org/wiki/Database) of a relational database management system (DBMS)
 	- recognise database technologies beyond relational DBMS
@@ -294,7 +294,7 @@ WHERE ...
 ## <i class="fa fa-book"></i> Reading
 - Essential
 	- [The Worlds of Database Systems (p1-13)](http://infolab.stanford.edu/~ullman/fcdb/ch1.pdf)
-	
+
 	- [Introduction from SQL for Web Nerds](http://philip.greenspun.com/sql/introduction.html)
 
 - Further
@@ -315,10 +315,10 @@ Week | Lecture | Lab
 09 | SQL | SQL
 10 | DBMS fundamentals | Workshop
 11 | Data warehouse | Data warehouse
-12 | Wrap up | No lab
+12 | Review | No lab
 
 
 
 # THE END
-### Data Empower!
+### Data = Knowledge
 [<i class="fa fa-print"></i>](?print-pdf#)
