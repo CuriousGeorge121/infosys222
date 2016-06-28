@@ -66,7 +66,7 @@ Student | 240 of you from A to Z
 ## <i class="fa fa-phone"></i> Communication
 - Discussion Forum: This is the primary platform for Q&A related to any course material and administrative matter. Please check if your question has been asked and answered before posting one
 
-- Email: Use it for _private message_ only. Direct all administrative matter and lab material to the course coordinator; lecture material and assessment question to the lecturer
+- Email: Use it for _private message_ only. Direct all administrative matter and lab material to the coordinator; lecture material and assessment question to the lecturer
 
 - Office Hour: By appointment only (Mon 12:00-13:00)
 
