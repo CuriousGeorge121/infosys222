@@ -36,15 +36,15 @@ By the end of this course it is expected that the student will be able to:
 
 Week | Content
 --- | ---
-1 | Introduction
-2 | Relational model
-3 | ER modelling
-4 | Data modelling
-5 | Data modelling
-6 | Normalisation
-7 | SQL
-8 | SQL
-9 | SQL
+01 | Introduction
+02 | Relational model
+03 | ER modelling
+04 | Data modelling
+05 | Data modelling
+06 | Normalisation
+07 | SQL
+08 | SQL
+09 | SQL
 10 | DBMS fundamentals
 11 | Data warehouse
 12 | Review
