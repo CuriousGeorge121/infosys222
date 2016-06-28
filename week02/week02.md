@@ -4,7 +4,7 @@
 
 
 
-## <i class="fa fa-history"></i> Previously on INFOSYS 222 ...
+## <i class="fa fa-history"></i> Previously on 222 ...
 - Database and DBMS
 
 - The intuitive concept of a relation as a two-dimensional table
@@ -47,18 +47,18 @@
 
 
 ## Relation
-> A relation is a __set__ of tuples (order does not matter)
+> A relation is a __set__ of tuples
 
 - A relation is always defined on certain __domains__:
-	> the sets from which the values in the tuples come from
+	- the sets from which the values in the tuples come from
 
 - Example: The tuple (Interstellar, 2014, 169, colour) could be part of a relation defined on the domains of:
 	- text
 	- integer
 	- integer
-	- { ’colour’, ’black and white’ }
+	- { 'colour', 'black and white' }
 
-<i class="fa fa-exclamation-circle"></i> The concepts of set and domain are equivalent in this particular context
+<i class="fa fa-exclamation-circle"></i> Order does not matter in sets
 
 
 ## Attribute
@@ -324,10 +324,10 @@ Week | Lecture | Lab
 09 | SQL | SQL
 10 | DBMS fundamentals | Workshop
 11 | Data warehouse | Data warehouse
-12 | Wrap up | No lab
+12 | Review | No lab
 
 
 
 # THE END
-### Data Rule!
+### Data = Knowledge
 [<i class="fa fa-print"></i>](?print-pdf#)
