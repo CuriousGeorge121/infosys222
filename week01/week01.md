@@ -42,9 +42,9 @@ Student | 240 of you from A to Z
 
 ## <i class="fa fa-calendar-check-o"></i> Assessment
 - Internal (50%)
-	- Assignment 01: started on 1/8; due on 22/08 Mon 10:00 (15%)
+	- Assignment 01: started on 01/08; due on 22/08 Mon 10:00 (15%)
 
-	- Assignment 02: started on 19/9; due on 10/10 Mon 10:00 (15%)
+	- Assignment 02: started on 19/09; due on 10/10 Mon 10:00 (15%)
 
 	- Test: held on 24/09 Sat 10:30-12:00 (20%)
 
