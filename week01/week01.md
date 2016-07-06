@@ -28,15 +28,16 @@ Student | 240 of you from A to Z
 
 ## <i class="fa fa-road"></i> Activity
 - Lecture (Week 01 - Week 12)
-	- Mon 11:00-12:00 @ 401-401
-	- Tue 12:00-13:00 @ 260-115 (FPAA)
-	- Wed 11:00-12:00 @ 260-073 (OGGB4)
+	- Mon 11:00 @ 401-401
+	- Tue 12:00 @ 260-115
+	- Wed 11:00 @ 260-073
 
 - Lab (Week 02 - Week 11)
-	- One 1.5-hr lab session on Wed, Thu or Fri
+	- A 1.5-hr lab session on Wed, Thu or Fri
 	- Attend only your enrolled session
 
 - Working on your own
+	- At least 6 hours per week
 	- Knowledge > Understanding > Skill
 
 
@@ -50,7 +51,7 @@ Student | 240 of you from A to Z
 
 - Exam (50%)
 
-<i class="fa fa-exclamation-circle"></i> Students __must__ [pass](https://uoa.custhelp.com/app/answers/detail/a_id/2748/~/marking-schemes-or-grade-scales-at-the-university-of-auckland) both internal and exam separately
+📢 Students __must__ [pass](https://uoa.custhelp.com/app/answers/detail/a_id/2748/~/marking-schemes-or-grade-scales-at-the-university-of-auckland) both internal and exam separately
 
 
 ## <i class="fa fa-wrench"></i> Resource
@@ -60,7 +61,7 @@ Student | 240 of you from A to Z
 
 - Reading: There is no textbook nor course book. Most readings for this course could be accessed online where [links](https://auckland.rl.talis.com/lists/67385800-22DC-21D5-CBF3-00CC4AFE9E1E.html) are provided
 
-- Software: [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9) or [Draw.io](https://www.draw.io), [SQLite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any text editor)
+- Software: [Draw.io](https://www.draw.io) or [ERWin](https://software.isom.auckland.ac.nz/Software/Details/ee120a1f-1975-4404-a882-ee28f8b69ef9), [SQLite](http://sqlite.org/download.html) and [Atom](https://atom.io/) (or any text editor)
 
 
 ## <i class="fa fa-phone"></i> Communication
@@ -68,7 +69,7 @@ Student | 240 of you from A to Z
 
 - Email: Use it for _private message_ only. Direct all administrative matter and lab material to the coordinator; lecture material and assessment question to the lecturer
 
-- Office Hour: By appointment only (Mon 12:00-13:00)
+- Office Hour: By appointment only (Mon 12:00-13:00 @ 260-349)
 
 - Class Rep
 
@@ -99,9 +100,13 @@ Student | 240 of you from A to Z
 
 ## Overview of the course
 - What is a database?
+
 - What is a DBMS?
+
 - What is a relational database?
+
 - How to design a relational database?
+
 - How to implement and use a relational database?
 
 
@@ -110,7 +115,7 @@ Student | 240 of you from A to Z
 
 	> A structured set of data held in a computer, especially one that is accessible in various ways
 
-	<i class="fa fa-question-circle-o"></i> How is a database different from a file system?
+- 🤔 How is a database different from a file system?
 
 - It is a collection of information that exists over a long period of time; the term database refers to a collection of data that is managed by a database management system (DBMS)
 
@@ -118,9 +123,9 @@ Student | 240 of you from A to Z
 ## What is a DBMS?
 > It is a system for providing __efficient__, __convenient__, and __safe__ storage of and __multi-user__ access to (possibly __massive__) amounts of __persistent__ data
 
-<i class="fa fa-question-circle-o"></i> Think of five examples when each of the bolded words applies
+- 🤔 Think of five examples when each of the bolded words applies
 
-- The [evolution](https://en.wikipedia.org/wiki/Database#History) of DBMS: hierarchical > network > relational > object-oriented > object-relational
+- The [evolution](https://en.wikipedia.org/wiki/Database#History) of DBMS: hierarchical → network → relational → object-oriented → object-relational
 
 
 ## What is a relational database?
@@ -138,9 +143,9 @@ accNo | balance | type
 ## How to design a relational database?
 - It is often far from obvious to decide how to store data from an application as relations. A considerable part of the course will deal with a methodology for good relational database design
 
-	<i class="fa fa-question-circle-o"></i> Suggest how to represent the following types of data as one or more relations: 1) a contact list, 2) a shopping cart
+- 🤔 Suggest how to represent the following types of data as one or more relations: 1) a contact list, 2) a shopping cart
 
-	<i class="fa fa-question-circle-o"></i> Can you avoid (or reduce) duplication of data?
+- 🤔 Can you avoid (or reduce) duplication of data?
 
 
 ## Database design methodology
@@ -150,7 +155,8 @@ accNo | balance | type
 	2. Convert the ER model to a number of relations
 	3. Eliminate (or reduce) redundancy by splitting up relations. This process is known as normalisation
 
-- Data modelling can also be differentiated among three stages: conceptual data modelling, logical data modelling and physical data modelling
+- Data modelling can also be differentiated among three stages:
+	- conceptual, logical and physical
 
 
 ## How to implement and use a relational database?
@@ -163,7 +169,6 @@ accNo | balance | type
 
 
 ## SQL
-- Consider the relation __Account__:
 
 accNo | balance | type
 --- | --- | ---
@@ -171,7 +176,7 @@ accNo | balance | type
 22222 | 7654.32 | check
 99999 | -8888.00 | loan
 
-- The command to get the balance from accNo 22222:
+- Consider the relation __Account__, the command to get the balance from accNo 22222:
 
 	```
 SELECT balance
@@ -198,11 +203,10 @@ WHERE accNo > balance;
 ```
 <!-- .element: contenteditable="true" -->
 
-<i class="fa fa-exclamation-circle"></i> __*__ is the shorthand for all columns/attributes
+📢 * is the shorthand for all columns/attributes
 
 
 ## SQL: more example
-- Suppose we have a related relation __Holder__:
 
 accNo | name | address
 --- | --- | ---
@@ -210,7 +214,7 @@ accNo | name | address
 22222 | Steven Roger | 222 Patriot Street
 22222 | Peggy Carter | 999 Marvel Avenue
 99999 | John Reese | 314 Machine Place
-- The command to get the names of holders with check accounts:
+- Suppose we have a related relation __Holder__, the command to get the names of holders with check accounts:
 
 	```
 SELECT name
@@ -237,7 +241,7 @@ AND <conditions>;
 
 
 ## SQL: Quiz
-- Consider the relation __Account__ again
+- Consider the relation [__Account__](#/6) again
 
 	Write a SQL command that lists all accounts (with accNo and type) that have a positive balance
 
@@ -251,7 +255,7 @@ WHERE ...
 
 
 ## SQL: Syntax and semantics
-- As demonstrated, SQL command resembles asking question in English. Quite often, the effect of a command can easily be intuitively understood
+- As demonstrated, SQL command resembles asking question in English. Quite often, the effect of a command can be intuitively understood
 
 - During the course you will learn how to compose much more complex command in SQL. To do that you need a precise understanding of SQL’s:
 
@@ -275,9 +279,13 @@ WHERE ...
 - Besides from data modelling and SQL, this course also covers:
 
 	- Database efficiency
+
 	- Transaction management
+
 	- Concurrency management
+
 	- Data warehouse (OLAP)
+
 	- Beyond relational DBMS
 
 
@@ -286,8 +294,11 @@ WHERE ...
 - By now you should:
 
 	- know what this course is about
+
 	- know how you could do well in this course
+
 	- know a little about some key concepts: database, DBMS, relation, SQL; and know how they fit into the course
+
 	- understand SELECT-FROM-WHERE of SQL
 
 
