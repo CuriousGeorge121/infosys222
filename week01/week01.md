@@ -38,7 +38,7 @@ Student | 240 of you from A to Z
 
 - Working on your own
 	- At least 6 hours per week
-	- Knowledge > Understanding > Skill
+	- Knowledge → Understanding → Skill
 
 
 ## <i class="fa fa-calendar-check-o"></i> Assessment
