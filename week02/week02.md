@@ -10,7 +10,7 @@
 - The intuitive concept of a relation as a two-dimensional table
 
 - Basic SQL command
-	- a subset of a relation can be obtained using SELECT-FROM-WHERE
+	- SELECT-FROM-WHERE
 
 
 
@@ -43,7 +43,7 @@
 
 	which contains the four values: Interstellar, 2014, 169, and colour
 
-	<i class="fa fa-exclamation-circle"></i> The order of values in a tuple is important, i.e., the tuple (Interstellar, 169, 2014, colour) is different from the tuple above
+- 📢 The order of values in a tuple is important, i.e., the tuple (Interstellar, 169, 2014, colour) is different from the tuple above
 
 
 ## Relation
@@ -58,7 +58,7 @@
 	- integer
 	- { 'colour', 'black and white' }
 
-<i class="fa fa-exclamation-circle"></i> Order does not matter in sets
+- 📢 Order does not matter in a set
 
 
 ## Attribute
@@ -95,7 +95,7 @@ Nebraska | black and white | 115 | 2013
 Inception | colour | 148 | 2010
 Interstellar | colour | 169 | 2014
 
-<i class="fa fa-question-circle-o"></i> Are these two relations the same?
+🤔 Are these two relations the same?
 
 
 ## Same data different model
@@ -139,20 +139,20 @@ Interstellar | colour | 169 | 2014
 - A set of tuples of a relation at a particular moment is known as an instance of that relation. As a convention DBMS maintains only one version of any relation - the current instance
 
 - It is less common for the schema of a relation to change, and it could be very expensive when that happens  
-	<i class="fa fa-question-circle-o"></i> Why is that?
+	- 🤔 Why is that?
 
 
 ## Key
 - There are many constraints on relations that the relational data model allows. The most fundamental one is the key constraint
 
 - A set of attributes forms a __key__ for a relation if we do not allow two tuples in a relation instance to have the same values in all the attributes of the key  
-	<i class="fa fa-question-circle-o"></i> Why is that important?
+	- 🤔 Why is this important?
 
 - Artificial key is often used in the real world situation to provide absolute uniqueness to each tuple of a relation
 
-<i class="fa fa-question-circle-o"></i> Underline/highlight the attribute(s) that could form the key:
+- 🤔 Underline/highlight the attribute(s) that could form the key:
 
-Movie (<span class="fragment highlight-red">title</span>, <span class="fragment highlight-red">year</span>, length, filmType)
+	Movie (<span class="fragment highlight-red">title</span>, <span class="fragment highlight-red">year</span>, length, filmType)
 
 
 
@@ -175,7 +175,7 @@ accNo | balance | type
 ## Quiz 02
 - Define a set of relations in schemas to model the data of a movie in [IMDb](http://www.imdb.com/)
 
-	- Make as many assumptions about the data as needed
+- Make as many assumptions about the data as needed
 
 [![Interstellar](interstellar.jpg) <!-- .element: style="width:40%; height:40%" -->](http://www.imdb.com/title/tt0816692/)
 
@@ -187,9 +187,9 @@ accNo | balance | type
 	- [Data definition language (DDL)](https://en.wikipedia.org/wiki/Data_definition_language)
 	- [Data manipulation language (DML)](https://en.wikipedia.org/wiki/Data_manipulation_language)
 
-	<i class="fa fa-question-circle-o"></i> How is SQL different from a programming language like Java?
+- 🤔 How is SQL different from a programming language like Java?
 
-	<i class="fa fa-book"></i> Further: [SQL from Wikipedia](http://en.wikipedia.org/wiki/SQL)
+- <i class="fa fa-book"></i> Further: [SQL from Wikipedia](http://en.wikipedia.org/wiki/SQL)
 
 
 ## Relation in SQL
@@ -205,7 +205,7 @@ accNo | balance | type
 			filmType TEXT
 		);
 
-	<i class="fa fa-exclamation-circle"></i> All sample SQL codes are based on [SQLite](http://sqlite.org/lang.html) syntax
+- 📢 All sample SQL codes are based on [SQLite](http://sqlite.org/lang.html) syntax
 
 
 ## Modifying relation schema
@@ -219,9 +219,9 @@ accNo | balance | type
 		ALTER TABLE R ADD COLUMN newColumn1 TEXT;
 		ALTER TABLE R ADD COLUMN newColumn2 TEXT DEFAULT 'Yes';
 
-	<i class="fa fa-question-circle-o"></i> What is the default value of an attribute when it is not explicitly specified?
+- 🤔 What is the default value of an attribute when it is not explicitly specified?
 
-	<i class="fa fa-question-circle-o"></i> How to delete an existing attribute from the relation R?
+- 🤔 How to delete an existing attribute from the relation R?
 
 
 ## Declaring key constraint
@@ -245,7 +245,7 @@ accNo | balance | type
 	- CHECK
 	- DEFAULT
 
-<i class="fa fa-book"></i> Further: [Constraints in SQLite](http://zetcode.com/db/sqlite/constraints/)
+- <i class="fa fa-book"></i> Further: [Constraints in SQLite](http://zetcode.com/db/sqlite/constraints/)
 
 
 ## INSERT, UPDATE and DELETE
@@ -262,7 +262,7 @@ accNo | balance | type
   	DELETE FROM Movie
   	WHERE title = 'Interstellar';
 
-	<i class="fa fa-exclamation-circle"></i> Are these DDL or DML?
+- 🤔 Are these DDL or DML?
 
 
 
@@ -295,9 +295,13 @@ accNo | balance | type
 - By now you should:
 
 	- know the vocabulary of the relational data model: relation, tuple, attribute, domain, schema, key, constraint etc
+
 	- know how to represent a relation using a schema
+
 	- have some basic ideas of how to choose a primary key for a relation
+
 	- understand that every decision builds on at least one assumption
+	
 	- have gained more knowledge in SQL
 
 
