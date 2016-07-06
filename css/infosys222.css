@@ -1,0 +1,15 @@
+/*
+ * infosys222
+ * https://github.com/johnny723/infosys222
+ * GPL v3
+ *
+ * Copyright © 2016 Johnny Chan
+ */
+/*********************************************
+ * TWEAKED STYLES IN REVEAL.CSS
+ *********************************************/
+
+.reveal { font-size: 30px; }
+.reveal pre { font-size: 30px; width: 100%; }
+.reveal tr:hover { color: #CC0000; }
+.reveal .smalltr tr {font-size: 20px; }
