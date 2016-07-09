@@ -19,7 +19,9 @@
 
 ## <i class="fa fa-list-alt"></i> Agenda
 - Data modelling
+
 	- Entity-relationship (ER) modelling
+
 	- ER diagram (ERD)
 
 - Case study
@@ -27,12 +29,12 @@
 
 
 ## Data modelling
-- Data modelling is the __process of creating a data model__ for a given set of data
-	- conceptual, logical and physical
+- Data modelling is the _process of creating a data model_ for a given set of data
+	- conceptual → logical → physical
 
-- How data are defined, structured and stored would have a __significant implication__ to how they can be accessed and manipulated
+- How data are defined, structured and stored would have a _significant implication_ to how they can be accessed and manipulated
 
-	<i class="fa fa-question-circle-o"></i> What makes a good data model?
+- 🤔 What makes a good data model?
 
 - During the stage of physical data modelling it is often necessary to consider the data model’s impact on the efficiency of database operations
 
@@ -45,7 +47,7 @@
 
 - An ERD is used as a tool for ER modelling, which also provides a representation of the ER model
 
-	<i class="fa fa-book"></i> Further: [ER model from Wikipedia](http://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model)
+- <i class="fa fa-book"></i> Further: [ER model from Wikipedia](http://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model)
 
 
 ## Entity
@@ -60,7 +62,7 @@
 - An entity set is conventionally named with a singular noun
 	- related to business characteristics, meaningful and self-documenting; unique and concise, readable
 
-  <i class="fa fa-exclamation-circle"></i> In ER modelling, sometimes an entity set is called an entity, whereas an entity is called an instance
+- 📢 In ER modelling, sometimes an entity set is called an entity, whereas an entity is called an instance
 
 
 ## Relationship
@@ -77,7 +79,8 @@
 
 
 ## Conceptual ERD
-![conceptual](conceptual.svg)  
+![conceptual](conceptual.svg)
+
 <small>Figure 3.1: Conceptual ER model of a product management system</small>
 
 
@@ -174,7 +177,7 @@
 ## Associative entity set
 - In logical data modelling, one major task is to resolve __all__ many-to-many relationship in the conceptual data model by converting them to [__associative entity set__](https://en.wikipedia.org/wiki/Associative_entity)
 
-	<i class="fa fa-question-circle-o"></i> Why is this step necessary?
+- 🤔 Why is this step necessary?
 
 - An associative entity set is used to represent a relationship which often has its own attribute that do not belong to other entity set
 
@@ -237,9 +240,13 @@
 - By now you should:
 
 	- know the vocabulary of the ER model: entity, entity set, relationship, degree, cardinality, attribute, key etc
+
 	- know how to create a data model with conceptual and logical ERD
+
 	- have some fundamental knowledge of how to resolve many-to-many relationship with an associative entity set
+
 	- understand the importance of assumption in ER modelling
+
 	- understand the difference between strong and weak entity sets
 
 
