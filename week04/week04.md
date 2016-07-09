@@ -128,7 +128,7 @@ key | key | key
 - Relationship
 	- Relationship defined at the superset level indicate that all subsets participate in that relationship as well
 
-<i class="fa fa-question-circle-o"></i> Which one is modelled with more details, the superset or the subset?
+- 🤔 Which one is modelled with more details, the superset or the subset?
 
 
 ## Example
@@ -269,9 +269,13 @@ key | key | key
 - By now you should:
 
 	- have deeper understanding of foreign key and referential integrity, strong/weak entity set, and relationship with different degree and cardinality
+
 	- know the design principles behind data modelling and how to apply them
+
 	- know the importance of KISS
+
 	- know the concepts in Enhanced ER model including superset and subset, specialisation and generalisation, and completeness, disjointness and discriminator
+	
 	- understand the concept of anybody
 
 
