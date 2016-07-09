@@ -156,7 +156,7 @@ accNo | balance | type
 	3. Eliminate (or reduce) redundancy by splitting up relations. This process is known as normalisation
 
 - Data modelling can also be differentiated among three stages:
-	- conceptual, logical and physical
+	- conceptual → logical → physical
 
 
 ## How to implement and use a relational database?

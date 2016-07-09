@@ -66,12 +66,12 @@ key | key | key
 
 
 ## Strong vs weak
-<i class="fa fa-question-circle-o"></i> Why do we care if entity sets are strong or weak?
-
-<i class="fa fa-question-circle-o"></i> What do we gain if we include that in the data model?
-
 ![building_room](building_room.svg)
 <small>Figure 4.1: An example of strong and weak entity sets</small>
+
+- 🤔 Why do we care if entity sets are strong or weak?
+
+- 🤔 What do we gain if we include that in the data model?
 
 
 ## Ternary relationship
@@ -80,13 +80,12 @@ key | key | key
 
 
 ## One-to-one relationship
-<i class="fa fa-question-circle-o"></i> Why is this not as common as one-to-many or many-to-many?
-
-<i class="fa fa-question-circle-o"></i> How should we deal with them?
-
 ![login](login.svg)
 <small>Figure 4.3: A binary one-to-one relationship</small>
 
+- 🤔 Why is this not as common as one-to-many or many-to-many?
+
+- 🤔 How should we deal with them?
 
 
 ## Design principle
@@ -152,10 +151,10 @@ key | key | key
 
 
 ## Generalisation
-<i class="fa fa-question-circle-o"></i> Why Motorcycle disappears from the generalisation?
+- 🤔 Why does Motorcycle disappear from the generalisation?
+
 ![vehicle_superset](vehicle_superset.svg)
 <small>Figure 4.8: Example of generalisation</small>
-
 
 
 ## Completeness and disjointness
@@ -165,7 +164,7 @@ key | key | key
 - Disjointness (or exclusiveness) specifies if an entity of a superset may simultaneously be an entity of two or more subsets
 	- Disjoint (exclusive): No | Overlap (inclusive): Yes
 
-<i class="fa fa-exclamation-circle"></i> Crow’s foot notation in ERWin could not model completeness and uses different symbols for disjointness
+- 📢 Crow’s foot notation in ERWin could not model completeness and uses different symbols for disjointness
 
 
 ## Total specialisation
@@ -191,7 +190,7 @@ key | key | key
 ## Discriminator
 - Subset discriminator: an attribute of the superset whose values determine the target subset(s)
 
-<i class="fa fa-question-circle-o"></i> What happens when disjoint is replaced by overlap?
+- 🤔 What happens when disjoint is replaced by overlap?
 
 ![employee_discriminator](employee_discriminator.svg)
 <small>Figure 4.13: Example of discriminator</small>
