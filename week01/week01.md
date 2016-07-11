@@ -23,7 +23,7 @@ Role | Name
 Lecturer | Johnny Chan [<i class="fa fa-envelope-o pull-right"></i>](mailto:jh.chan@auckland.ac.nz)
 Coordinator | Udayangi Muthupoltotage [<i class="fa fa-envelope-o pull-right"></i>](mailto:u.muthupoltotage@auckland.ac.nz)
 Tutor | Grace Li, Jose Ortiz, Mai Honda, Kun Qian, Shivanka Kathiravel, Zubair Mohamed
-Student | 240 of you from A to Z
+Student | 220 of you from A to Z
 
 
 ## <i class="fa fa-road"></i> Activity
