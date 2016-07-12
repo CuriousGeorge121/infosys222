@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Week 03</title>
+		<title>Week 02</title>
 		<meta charset="utf-8">
 		<meta name="description" content="slides">
 		<meta name="author" content="Johnny Chan">
@@ -34,7 +34,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="week03.md"
+				<section data-markdown="week02.md"
          				 data-separator="^\n\n\n"
          				 data-separator-vertical="^\n\n"
          				 data-separator-notes="^Note:">
@@ -45,7 +45,6 @@
 		<script src="../lib/js/head.min.js"></script>
 		<script src="../js/reveal.js"></script>
 		<script src="../plugin/spreadsheet/ruleJS.all.full.min.js"></script>
-
 
 		<script>
 			Reveal.initialize({
@@ -77,6 +76,12 @@
 					]
 				},
 
+				multiplex: {
+        	secret: null,
+        	id: '4d48cb509e855042',
+        	url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+    		},
+
 				dependencies: [
 					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -89,7 +94,9 @@
 					{ src: '../plugin/anything/anything.js' },
 					{ src: '../lib/js/d3.v3.js' },
 					{ src: '../lib/js/queue.v1.js' },
-					{ src: '../lib/js/topojson.v1.js' }
+					{ src: '../lib/js/topojson.v1.js' },
+					{ src: '//cdn.socket.io/socket.io-1.4.5.js', async: true },
+        	{ src: '../plugin/multiplex/client.js', async: true }
 				]
 			});
 
