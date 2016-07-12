@@ -59,7 +59,7 @@
 
 				anything: [
 					{
-		        className: "anything",
+		        className: 'anything',
 		        initialize: (
 							function(container, options) {
 								if (options && options.initialize) {
@@ -69,6 +69,12 @@
 						)
      			}
 				],
+
+				menu: {
+					custom: [
+						{ title: 'Links', icon: '<i class="fa fa-external-link">', src: '../asset/links.html' }
+					]
+				},
 
 				dependencies: [
 					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },

@@ -46,7 +46,6 @@
 		<script src="../js/reveal.js"></script>
 		<script src="../plugin/spreadsheet/ruleJS.all.full.min.js"></script>
 
-
 		<script>
 			Reveal.initialize({
 				width: 1100,
@@ -77,6 +76,12 @@
 					]
 				},
 
+				multiplex: {
+        	secret: null,
+        	id: 'a936215a30a6078c',
+        	url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+    		},
+
 				dependencies: [
 					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -89,7 +94,9 @@
 					{ src: '../plugin/anything/anything.js' },
 					{ src: '../lib/js/d3.v3.js' },
 					{ src: '../lib/js/queue.v1.js' },
-					{ src: '../lib/js/topojson.v1.js' }
+					{ src: '../lib/js/topojson.v1.js' },
+					{ src: '//cdn.socket.io/socket.io-1.4.5.js', async: true },
+        	{ src: '../plugin/multiplex/client.js', async: true }
 				]
 			});
 
