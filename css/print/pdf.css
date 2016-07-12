@@ -28,7 +28,8 @@ html {
 .reveal .controls,
 .reveal .progress,
 .reveal .playback,
-.reveal.overview,
+.reveal .overview,
+.reveal .slide-menu-button,
 .fork-reveal,
 .share-reveal,
 .state-background {
@@ -157,4 +158,3 @@ ul, ol, div, p {
 	position: absolute;
 	font-size: 14px;
 }
-
