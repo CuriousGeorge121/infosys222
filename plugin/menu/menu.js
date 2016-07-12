@@ -11,9 +11,9 @@ var RevealMenu = window.RevealMenu || (function(){
 
 	var module = {};
 
-	loadResource(options.path + '/lib/jeesh.min.js', 'script', function() {
-	loadResource(options.path + '/lib/bowser.min.js', 'script', function() {
-	loadResource(options.path + '/menu.css', 'stylesheet', function() {
+	loadResource(options.path + 'lib/jeesh.min.js', 'script', function() {
+	loadResource(options.path + 'lib/bowser.min.js', 'script', function() {
+	loadResource(options.path + 'menu.css', 'stylesheet', function() {
 	loadResource('../lib/font/font-awesome/css/font-awesome.min.css', 'stylesheet', function() {
 		// does not support IE8 or below
 		if (!bowser.msie || bowser.version >= 9) {
