@@ -137,7 +137,7 @@ accNo | balance | type
 22222 | 7654.32 | check
 99999 | -8888.00 | loan
 
-- For historical, mathematical reasons such table is referred to as a [relation](https://en.wikipedia.org/wiki/Relation_(database). This course focuses solely on relational database and relational DBMS
+- For historical, mathematical reasons such table is referred to as a relation. This course focuses solely on [relational database](https://en.wikipedia.org/wiki/Relational_database) and relational DBMS
 
 
 ## How to design a relational database?
@@ -182,7 +182,7 @@ accNo | balance | type
 SELECT balance
 FROM Account
 WHERE accNo = 22222;
- 	```
+	```
 <!-- .element: contenteditable="true" -->
 
 
@@ -214,6 +214,7 @@ accNo | name | address
 22222 | Steven Roger | 222 Patriot Street
 22222 | Peggy Carter | 999 Marvel Avenue
 99999 | John Reese | 314 Machine Place
+
 - Suppose we have a related relation __Holder__, the command to get the names of holders with check accounts:
 
 	```
@@ -405,5 +406,5 @@ Week | Lecture | Lab
 -->
 </canvas>
 
-#### Database rules in <span class="country">Country</span>!
+#### Database rules in <span class="country">Everywhere</span>!
 [<i class="fa fa-print"></i>](?print-pdf#)

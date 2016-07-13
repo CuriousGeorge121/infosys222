@@ -275,7 +275,7 @@ key | key | key
 	- know the importance of KISS
 
 	- know the concepts in Enhanced ER model including superset and subset, specialisation and generalisation, and completeness, disjointness and discriminator
-	
+
 	- understand the concept of anybody
 
 
@@ -379,5 +379,5 @@ Week | Lecture | Lab
 -->
 </canvas>
 
-#### Database rules in <span class="country">Country</span>!
+#### Database rules in <span class="country">Everywhere</span>!
 [<i class="fa fa-print"></i>](?print-pdf#)
