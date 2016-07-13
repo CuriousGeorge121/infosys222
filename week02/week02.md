@@ -100,7 +100,8 @@ Interstellar | colour | 169 | 2014
 
 ## Same data different model
 
-<pre><code style="max-height:550px" contenteditable><movies>
+```
+<movies>
 	<movie title="Interstellar" filmType="colour">
 		<Year>2014</Year>
 		<Length>169</Length>
@@ -114,7 +115,8 @@ Interstellar | colour | 169 | 2014
 		<Length>148</Length>
 	</movie>
 </movies>
-</code></pre>
+```
+<!-- .element: contenteditable="true" -->
 
 
 ## Schema
@@ -198,26 +200,34 @@ accNo | balance | type
 
 - The simplest way of declaring a schema of a relation in SQL begins with the keywords __CREATE TABLE__, followed by the relation name, and a list of attribute names with data types:
 
-		CREATE TABLE Movie (
-			title TEXT,
-			year INTEGER,
-			length INTEGER,
-			filmType TEXT
-		);
+	```
+CREATE TABLE Movie (
+	title TEXT,
+	year INTEGER,
+	length INTEGER,
+	filmType TEXT
+);
+	```
 
 - 📢 All sample SQL codes are based on [SQLite](http://sqlite.org/lang.html) syntax
 
 
 ## Modifying relation schema
 - To remove the entire relation R with all its tuples from the database:
-		DROP TABLE R;
+	```
+DROP TABLE R;
+	```
 
 - To rename the relation R to S:
-		ALTER TABLE R RENAME TO S;
+	```
+ALTER TABLE R RENAME TO S;
+	```
 
 - To add an attribute to the relation R:
-		ALTER TABLE R ADD COLUMN newColumn1 TEXT;
-		ALTER TABLE R ADD COLUMN newColumn2 TEXT DEFAULT 'Yes';
+	```
+ALTER TABLE R ADD COLUMN newColumn1 TEXT;
+ALTER TABLE R ADD COLUMN newColumn2 TEXT DEFAULT 'Yes';
+	```
 
 - 🤔 What is the default value of an attribute when it is not explicitly specified?
 
@@ -226,14 +236,15 @@ accNo | balance | type
 
 ## Declaring key constraint
 - In SQL, key(s) is/are declared when a relation is defined from the schema:
-
-		CREATE TABLE Movie (
-			title TEXT,
-			year INTEGER,
-			length INTEGER,
-			filmType TEXT,
-			PRIMARY KEY (title, year)
-		);
+	```
+CREATE TABLE Movie (
+	title TEXT,
+	year INTEGER,
+	length INTEGER,
+	filmType TEXT,
+	PRIMARY KEY (title, year)
+);
+	```
 
 
 ## Declaring other constraint
@@ -250,18 +261,24 @@ accNo | balance | type
 
 ## INSERT, UPDATE and DELETE
 - To insert a new tuple into the relation Movie:
-	  INSERT INTO Movie VALUES
-	  ('Interstellar', 2013, 168, 'colour');
+	```
+INSERT INTO Movie VALUES
+('Interstellar', 2013, 168, 'colour');
+	```
 
 - To update the value of an attribute in an existing tuple:
-  	UPDATE Movie
-  	SET year = 2014, length = 169
-  	WHERE title = 'Interstellar';
+	```
+UPDATE Movie
+SET year = 2014, length = 169
+WHERE title = 'Interstellar';
+	```
 
 - To delete a tuple:
-  	DELETE FROM Movie
-  	WHERE title = 'Interstellar';
-
+	```
+DELETE FROM Movie
+WHERE title = 'Interstellar';
+	```
+	
 - 🤔 Are these DDL or DML?
 
 
@@ -301,7 +318,7 @@ accNo | balance | type
 	- have some basic ideas of how to choose a primary key for a relation
 
 	- understand that every decision builds on at least one assumption
-	
+
 	- have gained more knowledge in SQL
 
 
@@ -407,5 +424,5 @@ Week | Lecture | Lab
 -->
 </canvas>
 
-#### Database rules in <span class="country">Country</span>!
+#### Database rules in <span class="country">Everywhere</span>!
 [<i class="fa fa-print"></i>](?print-pdf#)

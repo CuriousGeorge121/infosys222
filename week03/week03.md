@@ -73,9 +73,11 @@
 - Degree
 	- unary, binary, ternary, n-nary
 
-- [Cardinality](http://en.wikipedia.org/wiki/Cardinality_(data_modeling)
+- [Cardinality][c]
 	- Multiplicity: one-to-one, one-to-many, many-to-many
 	- Optionality: optional or mandatory
+
+[c]: http://en.wikipedia.org/wiki/Cardinality_(data_modeling)
 
 
 ## Conceptual ERD
@@ -107,9 +109,11 @@
 ## Key
 - In most cases, an entity can be uniquely identified in its entity set by the values of its attributes
 	- A set of attributes whose values uniquely identify an entity in its entity set is called a __key__ or a __candidate key__
-	- If there are several candidate keys, we choose one of them as the __primary key__, where its value must not change and must not be [null](https://en.wikipedia.org/wiki/Null_(SQL)
+	- If there are several candidate keys, we choose one of them as the __primary key__, where its value must not change and must not be [null][n]
 
 - Example: AUID could be chosen as the primary key for the Student entity set
+
+[n]: https://en.wikipedia.org/wiki/Null_(SQL)
 
 
 ## ERD with attribute
@@ -352,5 +356,5 @@ Week | Lecture | Lab
 -->
 </canvas>
 
-#### Database rules in <span class="country">Country</span>!
+#### Database rules in <span class="country">Everywhere</span>!
 [<i class="fa fa-print"></i>](?print-pdf#)
