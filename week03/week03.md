@@ -34,7 +34,7 @@
 
 - How data are defined, structured and stored would have a _significant implication_ to how they can be accessed and manipulated
 
-- 🤔 What makes a good data model?
+- 😶 What makes a good data model?
 
 - During the stage of physical data modelling it is often necessary to consider the data model’s impact on the efficiency of database operations
 
@@ -181,7 +181,7 @@
 ## Associative entity set
 - In logical data modelling, one major task is to resolve __all__ many-to-many relationship in the conceptual data model by converting them to [__associative entity set__](https://en.wikipedia.org/wiki/Associative_entity)
 
-- 🤔 Why is this step necessary?
+- 😶 Why is this step necessary?
 
 - An associative entity set is used to represent a relationship which often has its own attribute that do not belong to other entity set
 

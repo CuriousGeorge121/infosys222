@@ -95,7 +95,7 @@ Nebraska | black and white | 115 | 2013
 Inception | colour | 148 | 2010
 Interstellar | colour | 169 | 2014
 
-🤔 Are these two relations the same?
+😶 Are these two relations the same?
 
 
 ## Same data different model
@@ -141,18 +141,18 @@ Interstellar | colour | 169 | 2014
 - A set of tuples of a relation at a particular moment is known as an instance of that relation. As a convention DBMS maintains only one version of any relation - the current instance
 
 - It is less common for the schema of a relation to change, and it could be very expensive when that happens  
-	- 🤔 Why is that?
+	- 😶 Why is that?
 
 
 ## Key
 - There are many constraints on relations that the relational data model allows. The most fundamental one is the key constraint
 
 - A set of attributes forms a __key__ for a relation if we do not allow two tuples in a relation instance to have the same values in all the attributes of the key  
-	- 🤔 Why is this important?
+	- 😶 Why is this important?
 
 - Artificial key is often used in the real world situation to provide absolute uniqueness to each tuple of a relation
 
-- 🤔 Underline/highlight the attribute(s) that could form the key:
+- 😶 Underline/highlight the attribute(s) that could form the key:
 
 	Movie (<span class="fragment highlight-red">title</span>, <span class="fragment highlight-red">year</span>, length, filmType)
 
@@ -189,7 +189,7 @@ accNo | balance | type
 	- [Data definition language (DDL)](https://en.wikipedia.org/wiki/Data_definition_language)
 	- [Data manipulation language (DML)](https://en.wikipedia.org/wiki/Data_manipulation_language)
 
-- 🤔 How is SQL different from a programming language like Java?
+- 😶 How is SQL different from a programming language like Java?
 
 - <i class="fa fa-book"></i> Further: [SQL from Wikipedia](http://en.wikipedia.org/wiki/SQL)
 
@@ -229,9 +229,9 @@ ALTER TABLE R ADD COLUMN newColumn1 TEXT;
 ALTER TABLE R ADD COLUMN newColumn2 TEXT DEFAULT 'Yes';
 	```
 
-- 🤔 What is the default value of an attribute when it is not explicitly specified?
+- 😶 What is the default value of an attribute when it is not explicitly specified?
 
-- 🤔 How to delete an existing attribute from the relation R?
+- 😶 How to delete an existing attribute from the relation R?
 
 
 ## Declaring key constraint
@@ -278,8 +278,8 @@ WHERE title = 'Interstellar';
 DELETE FROM Movie
 WHERE title = 'Interstellar';
 	```
-	
-- 🤔 Are these DDL or DML?
+
+- 😶 Are these DDL or DML?
 
 
 
