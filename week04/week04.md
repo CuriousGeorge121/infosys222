@@ -69,9 +69,9 @@ key | key | key
 ![building_room](building_room.svg)
 <small>Figure 4.1: An example of strong and weak entity sets</small>
 
-- 🤔 Why do we care if entity sets are strong or weak?
+- 😶 Why do we care if entity sets are strong or weak?
 
-- 🤔 What do we gain if we include that in the data model?
+- 😶 What do we gain if we include that in the data model?
 
 
 ## Ternary relationship
@@ -83,9 +83,9 @@ key | key | key
 ![login](login.svg)
 <small>Figure 4.3: A binary one-to-one relationship</small>
 
-- 🤔 Why is this not as common as one-to-many or many-to-many?
+- 😶 Why is this not as common as one-to-many or many-to-many?
 
-- 🤔 How should we deal with them?
+- 😶 How should we deal with them?
 
 
 ## Design principle
@@ -128,7 +128,7 @@ key | key | key
 - Relationship
 	- Relationship defined at the superset level indicate that all subsets participate in that relationship as well
 
-- 🤔 Which one is modelled with more details, the superset or the subset?
+- 😶 Which one is modelled with more details, the superset or the subset?
 
 
 ## Example
@@ -151,7 +151,7 @@ key | key | key
 
 
 ## Generalisation
-- 🤔 Why does Motorcycle disappear from the generalisation?
+- 😶 Why does Motorcycle disappear from the generalisation?
 
 ![vehicle_superset](vehicle_superset.svg)
 <small>Figure 4.8: Example of generalisation</small>
@@ -190,7 +190,7 @@ key | key | key
 ## Discriminator
 - Subset discriminator: an attribute of the superset whose values determine the target subset(s)
 
-- 🤔 What happens when disjoint is replaced by overlap?
+- 😶 What happens when disjoint is replaced by overlap?
 
 ![employee_discriminator](employee_discriminator.svg)
 <small>Figure 4.13: Example of discriminator</small>
