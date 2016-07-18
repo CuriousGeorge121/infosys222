@@ -23,7 +23,7 @@ Role | Name
 Lecturer | Johnny Chan [<i class="fa fa-envelope-o pull-right"></i>](mailto:jh.chan@auckland.ac.nz)
 Coordinator | Udayangi Muthupoltotage [<i class="fa fa-envelope-o pull-right"></i>](mailto:u.muthupoltotage@auckland.ac.nz)
 Tutor | Denzil Brokken, Grace Li, Jose Ortiz, Mai Honda, Kun Qian, Shivanka Kathiravel, Zubair Mohamed
-Student | 220 of you from A to Z
+Student | 200+ of you from A to Z
 
 
 ## <i class="fa fa-road"></i> Activity
@@ -71,7 +71,7 @@ Student | 220 of you from A to Z
 
 - Office Hour: By appointment only (Mon 12:00-13:00 @ 260-349)
 
-- Class Rep
+- Class Rep: [Ryan Edwards](mailto:redw764@aucklanduni.ac.nz)
 
 
 
@@ -115,7 +115,7 @@ Student | 220 of you from A to Z
 
 	> A structured set of data held in a computer, especially one that is accessible in various ways
 
-- 🤔 How is a database different from a file system?
+- 😶 How is a database different from a file system?
 
 - It is a collection of information that exists over a long period of time; the term database refers to a collection of data that is managed by a database management system (DBMS)
 
@@ -123,7 +123,7 @@ Student | 220 of you from A to Z
 ## What is a DBMS?
 > It is a system for providing __efficient__, __convenient__, and __safe__ storage of and __multi-user__ access to (possibly __massive__) amounts of __persistent__ data
 
-- 🤔 Think of five examples when each of the bolded words applies
+- 😶 Think of five examples when each of the bolded words applies
 
 - The [evolution](https://en.wikipedia.org/wiki/Database#History) of DBMS: hierarchical → network → relational → object-oriented → object-relational
 
@@ -143,9 +143,9 @@ accNo | balance | type
 ## How to design a relational database?
 - It is often far from obvious to decide how to store data from an application as relations. A considerable part of the course will deal with a methodology for good relational database design
 
-- 🤔 Suggest how to represent the following types of data as one or more relations: 1) a contact list, 2) a shopping cart
+- 😶 Suggest how to represent the following types of data as one or more relations: 1) a contact list, 2) a shopping cart
 
-- 🤔 Can you avoid (or reduce) duplication of data?
+- 😶 Can you avoid (or reduce) duplication of data?
 
 
 ## Database design methodology
