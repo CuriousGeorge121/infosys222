@@ -1,6 +1,6 @@
 # <i class="fa fa-database"></i> INFOSYS 222
 ### Week 06: Normalisation
-[Johnny Chan](mailto:jh.chan@auckland.ac.nz) | [@infosys222](http://twitter.com/infosys222)
+<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222)
 
 
 
@@ -185,7 +185,8 @@ To remove all transitive functional dependencies
 - 📢 Make sure the primary key and foreign key of relations are specified appropriately (either with underline or labelling)
 
 
-<!-- .slide: data-background-image="invoice.png" data-background-size="800px" -->
+## Invoice
+[![invoice](invoice.png) <!-- .element: width="700px" height="650px" -->](invoice.png)
 
 
 
@@ -217,9 +218,13 @@ To remove all transitive functional dependencies
 
 
 ## Quiz 02
-- Derive a set of relations in 3NF from the data given in the a [lotto ticket](lotto.png). Show each step of normalisation clearly
+- Derive a set of relations in 3NF from the data given in the following slide. Show each step of normalisation clearly
 
 - Draw a normalised logical ERD based on the result of normalisation
+
+
+## Lotto ticket
+[![lotto](lotto.png) <!-- .element: width="350px" height="650px" -->](lotto.png)
 
 
 
