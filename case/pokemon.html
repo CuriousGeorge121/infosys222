@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Pokémon Go</title>
+		<meta charset="utf-8">
+		<meta name="description" content="slides">
+		<meta name="author" content="Johnny Chan">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="icon" href="../asset/database.png" type="image/png">
+
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+		<link rel="stylesheet" href="../lib/font/font-awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="../plugin/spreadsheet/spreadsheet.css">
+
+		<link rel="stylesheet" href="../css/infosys222.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match(/print-pdf/gi) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName('head')[0].appendChild(link);
+		</script>
+
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="pokemon.md"
+         				 data-separator="^\n\n\n"
+         				 data-separator-vertical="^\n\n"
+         				 data-separator-notes="^Note:">
+			 	</section>
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+		<script src="../plugin/spreadsheet/ruleJS.all.full.min.js"></script>
+
+
+		<script>
+			Reveal.initialize({
+				width: 1100,
+				height: 800,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide',
+
+				anything: [
+					{
+		        className: 'anything',
+		        initialize: (
+							function(container, options) {
+								if (options && options.initialize) {
+									options.initialize(container)
+								}
+							}
+						)
+     			}
+				],
+
+				menu: {
+					custom: [
+						{ title: 'Links', icon: '<i class="fa fa-external-link">', src: '../asset/links.html' }
+					]
+				},
+
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/spreadsheet/spreadsheet.js' },
+					{ src: '../plugin/menu/menu.js' },
+					{ src: '../plugin/anything/anything.js' },
+					{ src: '../lib/js/d3.v3.js' },
+					{ src: '../lib/js/queue.v1.js' },
+					{ src: '../lib/js/topojson.v1.js' }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
