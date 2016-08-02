@@ -72,7 +72,7 @@ The following specification captures only part of the game. The case is aimed fo
 ## Location
 - The game collects the geolocation of trainer every second through the [GPS](https://en.wikipedia.org/wiki/Global_Positioning_System) receiver of the mobile in the form of latitude and longitude
 
-- Pokémon in the wild is constantly assigned by the game to various location in random; and it would appear in a trainer's map when they are nearby each other. The trainer could choose to encounter a Pokémon or ignore it
+- Pokémon in the wild is constantly assigned by the game to various location in random; and it would appear in a trainer's map when they are nearby to each other. The trainer could choose to encounter a Pokémon or ignore it
 
 - There are two types of fixed location in the game where trainer could visit when nearby: PokéStop and Gym. Each has a name that corresponds to a landmark in the real world (e.g. a park), and all visits are stored
 
