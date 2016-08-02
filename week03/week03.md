@@ -202,7 +202,7 @@
 ## Quiz 01
 - Draw a logical ERD to represent the following case
 
-	- Each vendor can supply many parts to any number of warehouses but need not supply and parts
+	- Each vendor can supply many parts to any number of warehouses but need not supply any parts
 	- Each part can be supplied by any number of vendors to more than one warehouse, but each part must be supplied by at least one vendor to a warehouse
 	- Each warehouse can be supplied with any number of parts from more than one vendor, but each warehouse must be supplied with at least one part
 
