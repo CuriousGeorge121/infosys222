@@ -19,6 +19,12 @@
 
 
 
+## Safari booking system
+![safari](safari.svg)
+<small>Figure 5.1: The logical ERD of the Safari booking system</small>
+
+
+
 ## <i class="fa fa-list-alt"></i> Agenda
 - Case studies
 
