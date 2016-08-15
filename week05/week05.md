@@ -21,6 +21,7 @@
 
 ## Safari booking system
 ![safari](safari.svg)
+
 <small>Figure 5.1: The logical ERD of the Safari booking system</small>
 
 
@@ -78,6 +79,12 @@
 - Suggest any alternative way of modelling any part of the case
 
 - What design pattern have you discovered that could potentially be reused in other case?
+
+
+## Food delivery system
+![pizza](pizza.png)
+
+<small>Figure 5.2: The logical ERD of the food delivery system</small>
 
 
 ## Additional spec
