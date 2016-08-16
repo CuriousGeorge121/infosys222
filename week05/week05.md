@@ -93,6 +93,12 @@
 - After studying the website of Chop Chop Noodle House, list the new requirement and rule that must be followed for the food delivery system to accommodate two restaurants. Modify the logical ERD to reflect the changes required. Document and explain all the changes that have been made
 
 
+## Food delivery system (modified)
+![food](food.png)
+
+<small>Figure 5.3: The logical ERD of the food delivery system</small>
+
+
 
 # <i class="fa fa-briefcase"></i> Case study
 ### Animal management system <!-- .slide: data-background="zoo.jpg" data-background-transition="zoom" -->
@@ -146,6 +152,12 @@
 
 ## Spec: Conservation
 - Finally, Waitomo Zoo is heavily involved in animal conservation, they participate in many global initiatives and themselves have created some conservation programmes. Many animals at the zoo participate in conservation programmes and the database stores the history of their participation
+
+
+## Animal management system
+![zoo](zoo.png)
+
+<small>Figure 5.4: The logical ERD of the animal management system</small>
 
 
 
