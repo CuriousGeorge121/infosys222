@@ -47,7 +47,7 @@ Student | 200+ of you from A to Z
 
 	- Assignment 02: started on 19/09; due on 10/10 Mon 10:00 (15%)
 
-	- Test: held on 24/09 Sat 10:30-12:00 (20%)
+	- Test: held on 23/09 Fri 18:30-20:00 (20%)
 
 - Exam (50%)
 
