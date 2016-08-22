@@ -190,6 +190,17 @@ To remove all transitive functional dependencies
 
 
 
+## Quiz 02
+- Derive a set of relations in 3NF from the data given in the following slide. Show each step of normalisation clearly
+
+- Draw a normalised logical ERD based on the result of normalisation
+
+
+## Lotto ticket
+[![lotto](lotto.png) <!-- .element: width="350px" height="650px" -->](lotto.png)
+
+
+
 ## Physical data modelling
 - A [physical data model](http://en.wikipedia.org/wiki/Physical_data_model) is a representation of data design which takes into account the facility and constraint of a given DBMS
 
@@ -214,17 +225,6 @@ To remove all transitive functional dependencies
 	- It is not uncommon to reverse the process of normalisation to induce redundancy and eliminate the number of entity set for the purpose of performance and maintenance of the database
 
 - 📢 Consideration must not be taken lightly without strong reasoning
-
-
-
-## Quiz 02
-- Derive a set of relations in 3NF from the data given in the following slide. Show each step of normalisation clearly
-
-- Draw a normalised logical ERD based on the result of normalisation
-
-
-## Lotto ticket
-[![lotto](lotto.png) <!-- .element: width="350px" height="650px" -->](lotto.png)
 
 
 
