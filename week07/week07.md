@@ -574,7 +574,7 @@ Week | Lecture | Lab
 03 | ER modelling <i class="fa fa-check fa-pull-right"></i>| ER diagram <i class="fa fa-check fa-pull-right"></i>
 04 | Data modelling <i class="fa fa-check fa-pull-right"></i> | Data modelling <i class="fa fa-check fa-pull-right"></i>
 05 | Data modelling <i class="fa fa-check fa-pull-right"></i> | Workshop <i class="fa fa-check fa-pull-right"></i>
-06 | Normalisation | Normalisation <i class="fa fa-check fa-pull-right"></i>
+06 | Normalisation <i class="fa fa-check fa-pull-right"></i> | Normalisation <i class="fa fa-check fa-pull-right"></i>
 07 | SQL <i class="fa fa-check fa-pull-right"></i> | SQL <i class="fa fa-spinner fa-pulse fa-pull-right"></i>
 08 | SQL | SQL
 09 | SQL | SQL
