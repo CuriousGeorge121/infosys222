@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS BookGrade;
 DROP TABLE IF EXISTS Branch;
 
 CREATE TABLE Branch
-(branchNo INTEGER	PRIMARY KEY NOT NULL,
+(branchNo INTEGER PRIMARY KEY NOT NULL,
  branchName TEXT,
  branchStreet TEXT,
  branchSuburb TEXT,
@@ -43,7 +43,7 @@ INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VA
 INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (7,'McMillan Publishing Ltd','Kingston','KT',2);
 
 CREATE TABLE Author
-(authorNo INTEGER	PRIMARY KEY NOT NULL,
+(authorNo INTEGER PRIMARY KEY NOT NULL,
  authorFirstName TEXT,
  authorLastName TEXT,
  authorStreet TEXT,
@@ -62,7 +62,7 @@ INSERT INTO Author (authorFirstName, authorLastName, authorStreet, authorSuburb,
 INSERT INTO Author (authorFirstName, authorLastName, authorStreet, authorSuburb, authorCity) VALUES ('Koorey','Beatrice','12 Peach Parade','Remuera','Auckland');
 
 CREATE TABLE Book
-(bookCode INTEGER	PRIMARY KEY NOT NULL,
+(bookCode INTEGER PRIMARY KEY NOT NULL,
  bookTitle TEXT,
  bookType TEXT,
  paperback TEXT CHECK (paperback IN ('Y','N'))
@@ -99,7 +99,7 @@ INSERT INTO BookPrice (bookCode, startDate, endDate, price) VALUES (114, '2007-0
 INSERT INTO BookPrice (bookCode, startDate, endDate, price) VALUES (116, '2007-08-01','2008-12-31', 84.50);
 
 CREATE TABLE Writing
-(bookCode INTEGER	NOT NULL,
+(bookCode INTEGER NOT NULL,
  authorNo INTEGER NOT NULL,
  pubCode INTEGER,
  edition INTEGER,
@@ -122,7 +122,7 @@ INSERT INTO Writing (bookCode, authorNo, pubCode, edition, pubDate) VALUES (115,
 INSERT INTO Writing (bookCode, authorNo, pubCode, edition, pubDate) VALUES (116, 6, 6, 2, '1985-02-24');
 
 CREATE TABLE TransactionType
-(transactionTypeID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+(transactionTypeID INTEGER PRIMARY KEY NOT NULL,
  transactionType TEXT
 );
 
