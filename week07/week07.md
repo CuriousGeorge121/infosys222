@@ -51,7 +51,7 @@
 
 
 # <i class="fa fa-play-circle-o"></i> Demo
-### The book dataset
+### The book database
 
 
 
