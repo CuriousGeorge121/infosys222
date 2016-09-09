@@ -12,11 +12,11 @@ DROP TABLE IF EXISTS BookGrade;
 DROP TABLE IF EXISTS Branch;
 
 CREATE TABLE Branch
-(branchNo	    INTEGER	PRIMARY KEY NOT NULL,
- branchName		TEXT,
- branchStreet	TEXT,
- branchSuburb	TEXT,
- branchCity		TEXT
+(branchNo INTEGER	PRIMARY KEY NOT NULL,
+ branchName TEXT,
+ branchStreet TEXT,
+ branchSuburb TEXT,
+ branchCity TEXT
 );
 
 INSERT INTO Branch (branchName, branchStreet, branchSuburb, branchCity) VALUES ('McMillans Sylvia Park', '305 Sylvia Park Road', 'Mt Wellington', 'Auckland');
@@ -25,27 +25,30 @@ INSERT INTO Branch (branchName, branchStreet, branchSuburb, branchCity) VALUES (
 INSERT INTO Branch (branchName, branchStreet, branchSuburb, branchCity) VALUES ('McMillans North Shore','78 Albany Street', 'Albany Mall','North Shore');
 
 CREATE TABLE Publisher
-(pubCode	   INTEGER PRIMARY KEY NOT NULL,
- pubName		 TEXT,
- pubCity		 TEXT,
- pubCityCode TEXT
+(pubCode INTEGER PRIMARY KEY NOT NULL,
+ pubName TEXT,
+ pubCity TEXT,
+ pubCityCode TEXT,
+ parentPubCode INTEGER,
+ FOREIGN KEY (parentPubCode) REFERENCES Publisher (pubCode)
+ ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Bridgeman Publishers.','Wellington','WI');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Chuck Sawyer Books','New Plymouth','NP');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Lake House Books','Christchurch','CC');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Barclay Books','Auckland', 'AK');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Metcalf Publishers','Hamilton','HA');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('Hatfield and Sons','Dunedin','CC');
-INSERT INTO Publisher (pubName, pubCity, pubCityCode) VALUES ('McMillan Publishing Ltd.','Kingston','KT');
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (1,'Bridgeman Publishers','Wellington','WI', NULL);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (2,'Chuck Sawyer Books','New Plymouth','NP',1);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (3,'Lake House Books','Christchurch','CC',1);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (4,'Barclay Books','Auckland', 'AK',1);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (5,'Metcalf Publishers','Hamilton','HA',2);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (6,'Hatfield and Sons','Dunedin','CC',2);
+INSERT INTO Publisher (pubCode, pubName, pubCity, pubCityCode, parentPubCode) VALUES (7,'McMillan Publishing Ltd','Kingston','KT',2);
 
 CREATE TABLE Author
-(authorNo			    INTEGER	PRIMARY KEY NOT NULL,
- authorFirstName	TEXT,
- authorLastName		TEXT,
- authorStreet			TEXT,
- authorSuburb			TEXT,
- authorCity			  TEXT
+(authorNo INTEGER	PRIMARY KEY NOT NULL,
+ authorFirstName TEXT,
+ authorLastName TEXT,
+ authorStreet TEXT,
+ authorSuburb TEXT,
+ authorCity TEXT
 );
 
 INSERT INTO Author (authorFirstName, authorLastName, authorStreet, authorSuburb, authorCity) VALUES ('De Silva','Clarice', '21 Park View Street', 'Park View', 'Auckland');
@@ -59,10 +62,10 @@ INSERT INTO Author (authorFirstName, authorLastName, authorStreet, authorSuburb,
 INSERT INTO Author (authorFirstName, authorLastName, authorStreet, authorSuburb, authorCity) VALUES ('Koorey','Beatrice','12 Peach Parade','Remuera','Auckland');
 
 CREATE TABLE Book
-(bookCode		INTEGER	PRIMARY KEY NOT NULL,
- bookTitle	TEXT,
- bookType		TEXT,
- paperback	TEXT CHECK (paperback IN ('Y','N'))
+(bookCode INTEGER	PRIMARY KEY NOT NULL,
+ bookTitle TEXT,
+ bookType TEXT,
+ paperback TEXT CHECK (paperback IN ('Y','N'))
 );
 
 INSERT INTO Book (bookCode, bookTitle, bookType, paperback) VALUES (110,'Far from the Crowd','PSY','Y');
@@ -76,10 +79,10 @@ INSERT INTO Book (bookCode, bookTitle, bookType, paperback) VALUES (117,'Sneaky 
 INSERT INTO Book (bookCode, bookTitle, bookType, paperback) VALUES (999,'Pilgrim''s Progress',NULL,'N');
 
 CREATE TABLE BookPrice
-(bookCode 	INTEGER NOT NULL,
- startDate 	DATE NOT NULL,
- endDate 	  DATE,
- price 		  REAL,
+(bookCode INTEGER NOT NULL,
+ startDate DATE NOT NULL,
+ endDate DATE,
+ price REAL,
  PRIMARY KEY (bookCode, startDate),
  FOREIGN KEY (bookCode) REFERENCES Book (bookCode)
  ON UPDATE NO ACTION ON DELETE NO ACTION
@@ -96,11 +99,11 @@ INSERT INTO BookPrice (bookCode, startDate, endDate, price) VALUES (114, '2007-0
 INSERT INTO BookPrice (bookCode, startDate, endDate, price) VALUES (116, '2007-08-01','2008-12-31', 84.50);
 
 CREATE TABLE Writing
-(bookCode	INTEGER	NOT NULL,
- authorNo	INTEGER NOT NULL,
- pubCode  INTEGER,
- edition	INTEGER,
- pubDate	DATE,
+(bookCode INTEGER	NOT NULL,
+ authorNo INTEGER NOT NULL,
+ pubCode INTEGER,
+ edition INTEGER,
+ pubDate DATE,
  PRIMARY KEY (bookCode, authorNo),
  FOREIGN KEY (bookCode) REFERENCES Book (bookCode)
  ON UPDATE NO ACTION ON DELETE NO ACTION,
@@ -119,20 +122,20 @@ INSERT INTO Writing (bookCode, authorNo, pubCode, edition, pubDate) VALUES (115,
 INSERT INTO Writing (bookCode, authorNo, pubCode, edition, pubDate) VALUES (116, 6, 6, 2, '1985-02-24');
 
 CREATE TABLE TransactionType
-(transactionTypeID 	INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
- transactionType 		TEXT
+(transactionTypeID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+ transactionType TEXT
 );
 
 INSERT INTO TransactionType (transactionType) VALUES ('SOLD');
 INSERT INTO TransactionType (transactionType) VALUES ('RECEIVED');
 
 CREATE TABLE Inventory
-(transactionNo		  INTEGER PRIMARY KEY NOT NULL,
- transactionDate	  DATE,
- bookCode				    INTEGER,
- branchNo			      INTEGER,
- quantity				    INTEGER,
- transactionTypeID	INTEGER,
+(transactionNo INTEGER PRIMARY KEY NOT NULL,
+ transactionDate DATE,
+ bookCode INTEGER,
+ branchNo INTEGER,
+ quantity INTEGER,
+ transactionTypeID INTEGER,
  FOREIGN KEY (bookCode) REFERENCES Book (bookCode)
  ON UPDATE NO ACTION ON DELETE NO ACTION,
  FOREIGN KEY (branchNo) REFERENCES Branch (branchNo)
@@ -166,9 +169,9 @@ INSERT INTO Inventory (transactionDate, bookCode, branchNo, quantity, transactio
 INSERT INTO Inventory (transactionDate, bookCode, branchNo, quantity, transactionTypeID) VALUES ('2007-07-12', 116, 3, 2, 1);
 
 CREATE TABLE BookGrade
-(bookGrade	TEXT PRIMARY KEY NOT NULL,
- minValue	  REAL,
- maxValue	  REAL
+(bookGrade TEXT PRIMARY KEY NOT NULL,
+ minValue REAL,
+ maxValue REAL
 );
 
 INSERT INTO BookGrade (bookGrade, minValue, maxValue) VALUES ('Very High', 150.00, 1999.99);
@@ -178,8 +181,8 @@ INSERT INTO BookGrade (bookGrade, minValue, maxValue) VALUES ('Low', 25.00, 49.9
 INSERT INTO BookGrade (bookGrade, minValue, maxValue) VALUES ('Very Low', 0.00, 24.99);
 
 CREATE TABLE Role
-(roleID 	INTEGER PRIMARY KEY NOT NULL,
- role 		TEXT
+(roleID INTEGER PRIMARY KEY NOT NULL,
+ role TEXT
 );
 
 INSERT INTO Role (role) VALUES ('Branch Manager');
@@ -187,12 +190,12 @@ INSERT INTO Role (role) VALUES ('Sales Person');
 INSERT INTO Role (role) VALUES ('Office Admin');
 
 CREATE TABLE Staff
-(staffCode				INTEGER	PRIMARY KEY NOT NULL,
- staffFirstName 	TEXT,
- staffLastName		TEXT,
- staffStreet			TEXT,
- staffSuburb			TEXT,
- staffCity				TEXT
+(staffCode INTEGER PRIMARY KEY NOT NULL,
+ staffFirstName TEXT,
+ staffLastName TEXT,
+ staffStreet TEXT,
+ staffSuburb TEXT,
+ staffCity TEXT
 );
 
 INSERT INTO Staff (staffFirstName, staffLastName, staffStreet, staffSuburb, staffCity) VALUES ('Deepak', 'Gupta','78 Xerox Road', 'Celeste', 'Hamilton');
@@ -209,13 +212,13 @@ INSERT INTO Staff (staffFirstName, staffLastName, staffStreet, staffSuburb, staf
 INSERT INTO Staff (staffFirstName, staffLastName, staffStreet, staffSuburb, staffCity) VALUES ('Charles', 'Schindler','35 St Stevens Avenue','Kohimarama','Auckland');
 
 CREATE TABLE StaffAssignment
-(assignmentID  INTEGER PRIMARY KEY NOT NULL,
- roleID		     INTEGER,
- branchNo	     INTEGER,
- staffCode		 INTEGER,
- startDate 		 DATE,
- endDate 		   DATE,
- salary			   REAL,
+(assignmentID INTEGER PRIMARY KEY NOT NULL,
+ roleID INTEGER,
+ branchNo INTEGER,
+ staffCode INTEGER,
+ startDate DATE,
+ endDate DATE,
+ salary REAL,
  FOREIGN KEY (roleID) REFERENCES Role (roleID)
  ON UPDATE NO ACTION ON DELETE NO ACTION,
  FOREIGN KEY (branchNo) REFERENCES Branch (branchNo)
