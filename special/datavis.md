@@ -3,6 +3,11 @@
 <i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222)
 
 
+# <i class="fa fa-database"></i> INFOSYS 222+500
+### Not Very Special: Data Visualisation
+<i class="fa fa-copyright"></i> [Johnny Chan](mailto:jh.chan@auckland.ac.nz) | <i class="fa fa-twitter"></i> [@infosys222](http://twitter.com/infosys222)+500
+
+
 
 ## ```<1>```
 
@@ -39,6 +44,13 @@
 
 ## We are not wired to read fast but wired to visualise really fast!
 - A [picture](https://pic.twitter.com/ay8V8CPvXt) is better than a thousand words 📸
+
+
+## Higgs Boson
+![higgs](http://www.physics.mcmaster.ca/ElementaryParticle/wp-content/uploads/2012/07/Higgs-Bump.png)
+<!-- .element: height="500px" -->
+
+<small>Source: [McMaster University](http://www.physics.mcmaster.ca/ElementaryParticle/home/the-higgs)</small>
 
 
 ## ```</1>```
