@@ -9,17 +9,17 @@
 - Basics of SQL
 	- CREATE, ALTER and DROP TABLE
 	- INSERT, SELECT, UPDATE and DELETE
-	- operator
-	- sorting
+	- Operator
+	- Sorting
+	- Single-row function
 
 - SQLite
 
 
 
 ## <i class="fa fa-list-alt"></i> Agenda
-- Function
-	- Single-row function
-	- Multi-row function (aggregate function)
+
+- Multi-row function (aggregate function)
 
 - Join
 
@@ -27,118 +27,9 @@
 
 
 
-## Single-row function
-- Manipulate data item
-- Accept argument and return one value
-- Act on each row returned
-- Return one result per row
-- Can be nested
-
-
-## String function
-| Function | Description |
-| :------------- | :------------- |
-| LOWER(X) | It returns a copy of string X with all ASCII characters converted to lower case |
-| UPPER(X) | It returns a copy of string X with all ASCII characters converted to upper case |
-| SUBSTR(X,Y) or SUBSTR(X,Y,Z) | It returns a substring of string X that begins with the Y-th character and which is Z characters long |
-| LENGTH(X) | It returns the number of characters in string X |
-| INSTR(X,Y) | It finds the first occurrence of string Y within string X and returns the number of prior characters plus 1, or 0 if Y is nowhere found within X |
-| REPLACE(X,Y,Z) | It returns a string formed by substituting string Z for every occurrence of string Y in string X |
-| RTRIM(X) or RTRIM(X,Y) | It returns a string formed by removing any and all characters that appear in Y (or white spaces if Y is not provided) from the right side of X |
-| LTRIM(X) or LTRIM(X,Y) | It returns a string formed by removing any and all characters that appear in Y (or white spaces if Y is not provided) from the left side of X |
-| TRIM(X) or TRIM(X,Y) | It returns a string formed by removing any and all characters that appear in Y (or white spaces if Y is not provided) from both ends of X |
-<!-- .element: class="smalltr" -->
-
-
-## Quiz 01
-- What would be returned from the following statements?
-
-```
-SELECT LOWER('University of Auckland');
-SELECT UPPER('University of Auckland');
-SELECT SUBSTR('University of Auckland', 4, 7);
-SELECT INSTR('University of Auckland', ' ');
-SELECT LENGTH('University of Auckland');
-SELECT REPLACE('University of Auckland','Auckland','Otago');
-SELECT RTRIM('University of Auckland', 'U');
-SELECT LTRIM('University of Auckland', 'U');
-SELECT TRIM('University of Auckland', 'U');
-```
-
-
-## Quiz 02
-- String literal is case sensitive in SQL. If your task is to look up the address of a particular staff member (e.g. James McDonald) without knowing for sure how names are stored (i.e. whether they are in upper, lower or mixed cases), what would be the optimised way to compose your SELECT statement?
-
-<br />
-```
-SELECT staffStreet, staffSuburb, staffCity
-FROM Staff
-WHERE staffFirstName = 'James'
-AND staffLastName = 'McDonald';
-```
-<!-- .element: contenteditable="true" -->
-
-
-## Numeric function
-| Function | Description |
-| :------------- | :------------- |
-| ABS(X) | It returns the absolute value of number X |
-| MAX(X,Y,...) | It returns the maximum value among the list of numeric arguments |
-| MIN(X,Y,...) | It returns the minimum value among the list of numeric arguments |
-| ROUND(X) or ROUND(X,Y) | It returns a floating-point value X rounded to Y digits to the right of the decimal point. If the Y argument is omitted, it is assumed to be 0 |
-| RANDOM() | It returns a pseudo-random integer between -9223372036854775808 and +9223372036854775807 |
-
-
-## Date function
-| Function | Description |
-| :------------- | :------------- |
-| DATE(X,Y,...) | It returns the date in this format: YYYY-MM-DD |
-| TIME(X,Y,...) | It returns the date in this format: HH:MM:SS |
-| DATETIME(X,Y,...) | It returns the date and time in this format: YYYY-MM-DD HH:MM:SS |
-| JULIANDAY(X,Y,...) | It returns the [Julian day](http://en.wikipedia.org/wiki/Julian_day) - the number of days since noon in Greenwich on November 24, 4714 B.C. |
-| STRFTIME(F,X,Y,...) | It returns the date formatted according to the format string F specified as the first argument. The DATE(), TIME() and DATETIME() functions are equivalent to STRFTIME() with certain formats |
-
-<br />
-- <i class="fa fa-book"></i> Further: [Date function in SQLite](https://www.sqlite.org/lang_datefunc.html)
-
-
-## Example
-- How many weeks have all the staff been employed?
-
-```
-SELECT staffCode, ROUND((JULIANDAY('now', 'localtime') -
-JULIANDAY(startDate, 'localtime'))/7) weeks
-FROM StaffAssignment;
-
-staffCode   weeks     
-----------  ----------
-1           480.0     
-2           475.0     
-3           480.0     
-4           475.0     
-5           474.0     
-6           479.0     
-7           457.0     
-8           474.0       
-...
-```
-
-
-## Quiz 03
-- Modify the SELECT statement in the previous example, so that it calculates the total weeks of employment correctly for staff that have left the company as well
-
-
-## More single-row function
-| Function | Description |
-| :------------- | :------------- |
-| IFNULL(X,Y) | It returns a copy of its first non-NULL argument; it could be used to replace a NULL value from a column with an alternative value |
-| TYPEOF(X) | It returns a string that indicates the datatype of the expression X: null, integer, real, text, or blob |
-| UNICODE(X) | It returns the numeric unicode code point corresponding to the first character of the string X |
-
-
-
 ## Multi-row function
 - Work on multiple rows to give one result per group
+
 - Also known as group or aggregate function
 
 
@@ -210,7 +101,7 @@ branchNo    AVG(salary)
 - 😶 How is HAVING different from WHERE in SQL?
 
 
-## Quiz 04
+## Quiz 01
 - Write a SELECT statement to show the number of books transacted per branch
 
 
@@ -515,11 +406,11 @@ branchNo    MIN(salary)
 ```
 
 
-## Quiz 05
+## Quiz 02
 - Write a single SQL statement to list all the staff members who have either the same role or same salary as Sean Henderson (staffCode = 7). The query should have 4 columns: staffCode, branchNo, roleID and salary, and it should exclude Sean Henderson from the result
 
 
-## Quiz 06
+## Quiz 03
 - Write a single SQL statement to list all the staff members who have been assigned/hired with the three earliest start dates
 
 
@@ -540,7 +431,7 @@ MIN(avgSalary)
 ```
 
 
-## Quiz 07
+## Quiz 04
 - Write a single SQL statement to list all the books in stock. There should be two columns: book title and the total in stock (Hint: The total in stock can be calculated by the total received minus the total sold)
 
 
@@ -564,7 +455,7 @@ WHERE bookCode = (SELECT bookCode FROM Book
 ## <i class="fa fa-list-alt"></i> Summary
 - By now you have learnt:
 
-	- how to use both single-row and multi-row functions
+	- how to use multi-row function
 
 	- how to use join
 
@@ -576,9 +467,6 @@ WHERE bookCode = (SELECT bookCode FROM Book
 	- [Chapter 3: SQL for SQLite](https://auckland.rl.talis.com/items/71028B3F-9B42-EE38-BD07-18FC5028B84F.html?referrer=%2Flists%2F67385800-22DC-21D5-CBF3-00CC4AFE9E1E.html%23item-71028B3F-9B42-EE38-BD07-18FC5028B84F)
 
 - Further
-	- [Core function in SQLite](https://www.sqlite.org/lang_corefunc.html)
-
-	- [Date and time function in SQLite](http://www.sqlite.org/lang_datefunc.html)
 
 	- [Aggregate function in SQLite](http://www.sqlite.org/lang_aggfunc.html)
 
