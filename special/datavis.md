@@ -120,10 +120,6 @@
 <small>Source: [D3](https://d3js.org/)</small>
 
 
-## Example
-<iframe src="https://dl.dropboxusercontent.com/u/7603925/strategies/itsp-progress/dashboard-itsp-pa-class.html" width="1200" height="680"></iframe>
-
-
 ## ```</3>```
 
 
