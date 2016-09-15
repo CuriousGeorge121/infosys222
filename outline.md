@@ -23,6 +23,7 @@ This course aims to develop the fundamental skills of designing and developing a
 
 ## Learning Outcomes
 By the end of this course it is expected that the student will be able to:
+
 1.	understand the fundamental concepts of relational database;
 2.	design a relational database;
 3.	implement a relational database;
