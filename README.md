@@ -173,6 +173,6 @@ Student will be asked to complete course and teaching evaluations at certain poi
 -->
 </canvas>
 
-#### Database rules in <span class="country">Country</span>!
+#### Database rules in <span class="country">everywhere</span>!
 
 [<i class="fa fa-print"></i>](?print-pdf#)
